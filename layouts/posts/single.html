@@ -28,7 +28,7 @@
 
       {{ if .Params.Cover }}
         <figure class="post-cover">
-          <img src="{{ .Params.Cover | absURL }}" alt="{{ .Title }}" />
+          <img src="{{ .Params.Cover }}" alt="" />
           
           {{ if .Params.CoverCaption }}
             <figcaption class="center">{{ .Params.CoverCaption | markdownify }}</figcaption>
@@ -153,6 +153,10 @@
     {{ if .Site.Params.Commento.Url }}
       <script defer src={{ .Site.Params.Commento.Url }}></script>
       <div id="commento"></div>
+    {{ end }}
+
+    {{ if .Params.mathjax }}
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_SVG"></script>
     {{ end }}
 
   </main>
