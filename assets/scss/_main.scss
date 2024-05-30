@@ -67,7 +67,6 @@ h6 {
   align-items: center;
   line-height: 1.3;
 }
-
 h1 {
   font-size: 2.625rem;
 }
@@ -122,6 +121,10 @@ img {
 
   &.right {
     margin-left: auto;
+  }
+  &.rounded {
+    border-radius: 5%;
+    margin: auto;
   }
   &.circle {
     border-radius: 50%;
@@ -432,4 +435,8 @@ hr {
 // Prism JS Additionals
 .highlight {
   margin: 30px auto;
+}
+
+.title-name{
+  text-decoration: none;
 }
